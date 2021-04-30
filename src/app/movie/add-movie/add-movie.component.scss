@@ -1,0 +1,28 @@
+form {
+  max-width: 500px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+input {
+  margin: 20px 10px;
+  width: 90%;
+  border: 0px;
+  font-size: 18px;
+  padding: 5px;
+  box-shadow: 5px 5px 0px #FFF;
+}
+
+button {
+  border: 0px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0px 5px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  margin-right: 14px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

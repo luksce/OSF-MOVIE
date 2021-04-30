@@ -1,3 +1,26 @@
-nav{
-  background: linear-gradient(to right, #000, rgb(0, 8, 51));
+nav {
+  background: linear-gradient(to right, #000000, #010042);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 5px;
+  padding: 0px;
+  color: white;
+}
+
+button {
+  border: 0px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  font-size: 18px;
+  color: white;
+  margin-right: 14px;
+  height: 40px;
+  width: 100px;
+  box-shadow: 5px 5px 0px black;
+  border-radius: 10px;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
