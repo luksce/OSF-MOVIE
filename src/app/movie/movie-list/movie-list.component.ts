@@ -14,7 +14,6 @@ import { Movie } from '../models/movie.model';
 import { MovieService } from './../services/movie.service';
 import { NavbarService } from './../../navbar/services/navbar.service';
 
-
 export class Moviee {
   constructor(
     public id : number,
@@ -58,7 +57,6 @@ export class Moviee {
 })
 export class MovieListComponent implements OnInit {
   movies$: Observable<Movie[]>;
-  loadingMovies: Array<Number>;
   movies: Moviee[];
 
   constructor(
@@ -68,7 +66,6 @@ export class MovieListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.loadingMovies = new Array(10).fill(0).map((n, index) => index);
     this.getMovies();
     this.movies$ = this.movieService.getMoviesFromHttp();
     this.navbarService.title.next('OSF | Movie');
