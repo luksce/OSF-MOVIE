@@ -1,9 +1,17 @@
-<ul *ngIf="movies$ | async as movies; else loading" [@listAnimation]="movies">
+<!-- <ul *ngIf="movies$ | async as movies; else loading" [@listAnimation]="movies">
   <li *ngFor="let movie of movies">
     <a [routerLink]="movie.id">
       <img [src]="movie.image" />
     </a>
   </li>
+</ul> -->
+
+<ul>
+  <!-- <li *ngFor="let movie of movies"> -->
+    <li>
+    <p>{{movies.id}}</p>
+    <p>{{movies.title}}</p>
+    <p>{{movies.overview}}</p>
+    <p>{{movies.release_date}}</p>
+  </li>
 </ul>
-
-
