@@ -1,3 +1,5 @@
+//ESSE MODEL É PRA FAZER COM O DB JSON
+
 export interface Movie {
   id: number;
   name: string;

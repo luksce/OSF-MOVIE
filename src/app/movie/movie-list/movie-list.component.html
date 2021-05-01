@@ -1,17 +1,15 @@
-<!-- <ul *ngIf="movies$ | async as movies; else loading" [@listAnimation]="movies">
+ <!-- FEITO PARA O DBJSON-->
+<!-- <ul *ngIf="movies$ | async as movies; else loading">
   <li *ngFor="let movie of movies">
     <a [routerLink]="movie.id">
       <img [src]="movie.image" />
     </a>
   </li>
-</ul> -->
+</ul>  -->
 
 <ul>
-  <!-- <li *ngFor="let movie of movies"> -->
-    <li>
-    <p>{{movies.id}}</p>
-    <p>{{movies.title}}</p>
-    <p>{{movies.overview}}</p>
-    <p>{{movies.release_date}}</p>
+  <li *ngFor="let movie of movies"> 
+    <img [src]="movie.poster_path" />
+    <p>{{movie.title}} | {{movie.release_date}}</p>
   </li>
 </ul>

@@ -8,10 +8,12 @@ import { Movie, movies } from '../models/movie.model';
   providedIn: 'root',
 })
 export class MovieService {
+
+  //SERVICE PARA FAZER COM O DBJSON
   private ROOT_URL = 'http://localhost:3000/movies';
-
+  
   constructor(private http: HttpClient) {}
-
+  
   getMovies() {
     return of(movies);
   }

@@ -20,7 +20,7 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
     private navbarService: NavbarService,
     private route: ActivatedRoute,
   ) {}
-
+    
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
     this.movieSub$ = this.movieService

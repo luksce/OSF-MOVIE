@@ -10,6 +10,7 @@ import { MovieService } from './../services/movie.service';
   styleUrls: ['./add-movie.component.scss'],
 })
 export class AddMovieComponent implements OnInit {
+  //ADICIONAR FILME NO DB.JSON PELO FORMULARIO
   movieForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     image: new FormControl('', [Validators.required]),
@@ -26,7 +27,7 @@ export class AddMovieComponent implements OnInit {
   ngOnInit() {
     this.navbarService.title.next('Add Movies');
   }
-
+  
   addMovie() {
     if (this.movieForm.valid) {
       this.movieService.addMovie(this.movieForm.value).subscribe(res => {
